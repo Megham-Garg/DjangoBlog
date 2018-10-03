@@ -26,15 +26,11 @@ anime.timeline({loop: true})
 
 // Get the modal
 var log = document.getElementById('id01');
-var sign = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == log) {
         log.style.display = "none";
-    }
-    if (event.target == sign) {
-        sign.style.display = "none";
     }
 }
 

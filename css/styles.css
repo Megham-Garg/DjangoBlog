@@ -1,0 +1,502 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 16px;
+  font-family: 'Oxygen' , sans-serif;
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/** HEADER **/
+#header-nav{
+  background-color: #B92326;
+  border-radius: 0;
+  border:0;
+  margin-bottom: 0;
+}
+@media(max-width: 480px){
+  #header-nav{
+    height: 50%;
+  }
+}
+#logo-img{
+  background: url('images/user.png') no-repeat #fff;
+  background-size: cover;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+  margin:10px 15px 10px 0;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1,h2{ /* name */
+  font-family: 'Lora', serif;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+#header-nav h2{
+  float: right;
+  font-family: 'trazan';
+  margin-top: 20px;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p{ /* Indian's Blog */
+  margin-top: 10px;
+  display: block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#header-nav > a{
+  font-weight: bold;
+  float: right;
+  text-decoration: none;
+  transform: translate(-50%,-50%);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  margin: 50px 20px 20px 20px;
+  font-size: 20px;
+  background : linear-gradient(90deg, #B92326, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+#header-nav > a:hover{
+  animation: animate 8s linear infinite;
+}
+
+#header-nav > a:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background : linear-gradient(90deg, #B92326, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#header-nav > a:hover:before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+
+.btn-group{
+  position: absolute;
+  top: 0;
+  margin: 15px;
+  right:0;
+}
+
+.drop1{
+  padding: 0;
+}
+
+.drop2{
+  color: #B92326;
+}
+
+.dropdown-menu{
+  right: 0;
+  left: auto;
+} 
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*for checkbox*/
+input[type="checkbox"]{
+  margin-left: 6px;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*control on spillage*/
+.w{
+  width: auto;
+}
+
+label,.submit{
+    display: block;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.submit,.signupbtn,.cancelbtn{
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Footer */
+ul{
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+ol, ul {
+    list-style: none;
+}
+ul li {
+    padding-left: 0.5em;
+}
+a {
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;  
+    outline: 0;
+}
+
+#footer {
+  padding: 4em 0 2em 0;
+  background-color: #1b1b1f;
+  text-align: center;
+}
+
+#footer .inner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 980px) {
+
+    #footer .inner {
+      width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #footer .inner {
+      width: 90%;
+    }
+
+}
+
+ul li a{
+  transition: 0.5s;
+  position: relative;
+  padding-top: 4px;
+  margin: 0 20px 0 0;
+}
+
+ul li a span{
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(1),
+ul li a span:nth-child(3)
+{
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+ul li a span:nth-child(1)
+{
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+ul li a:hover span:nth-child(1)
+{
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(3)
+{
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+ul li a:hover span:nth-child(3)
+{
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4)
+{
+  height: 100%;
+  width: 1px;
+  background: #fff;
+}
+ul li a span:nth-child(2)
+{
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+ul li a:hover span:nth-child(2)
+{
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(4)
+{
+  bottom: 0;
+  right: 0;
+  transform-origin: left;
+}
+
+ul li a:hover span:nth-child(4)
+{
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+
+  #footer {
+    padding: 3em 0 1em 0;
+  }
+
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*main content*/
+.main-content{
+}
+.row div{
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+.row div span{
+  height: 90%;
+  width: 50%;
+  display: inline-block;
+  border-radius: 20px;
+}
+.row div span:hover{
+  box-shadow:0 25px 60px rgba(0,0,0,.8);
+}
+/*
+filter:blur(10px);*/
+#Fitness{
+  background: url('images/fitness.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Fashion{
+  background: url('images/fashion.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Grooming{
+  background: url('images/grooming.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Random{
+  background: url('images/random.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

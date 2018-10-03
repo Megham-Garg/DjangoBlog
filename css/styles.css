@@ -94,7 +94,7 @@ body{
   color: #fff;
   margin: 50px 20px 20px 20px;
   font-size: 20px;
-  background : linear-gradient(90deg, #B92326, #f441a5, #ffeb3b, #B92326);
+  background : linear-gradient(90deg, #B92326, #800000, #b30000, #B92326);
   background-size: 400%;
   border-radius: 30px;
   z-index: 1;
@@ -112,7 +112,7 @@ body{
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background : linear-gradient(90deg, #B92326, #f441a5, #ffeb3b, #B92326);
+  background : linear-gradient(90deg, #B92326, #ff0005, #b30000, #B92326);
   background-size: 400%;
   border-radius: 40px;
   opacity: 0;
@@ -463,40 +463,26 @@ ul li a:hover span:nth-child(4)
 
 /*main content*/
 .main-content{
-}
-.row div{
-  height: 400px;
   position: relative;
-  text-align: center;
 }
-.row div span{
-  height: 90%;
-  width: 50%;
-  display: inline-block;
-  border-radius: 20px;
-}
-.row div span:hover{
+.row div:hover{
   box-shadow:0 25px 60px rgba(0,0,0,.8);
 }
-/*
-filter:blur(10px);*/
-#Fitness{
-  background: url('images/fitness.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#Fashion{
-  background: url('images/fashion.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#Grooming{
-  background: url('images/grooming.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+#Fitness,
+#Fashion,
+#Grooming,
 #Random{
-  background: url('images/random.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+#Fitness > img,
+#Fashion > img,
+#Grooming > img,
+#Random > img{
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }

@@ -470,6 +470,16 @@ ul li a:hover span:nth-child(4)
   text-align: center;
   margin-top: 15px;
   padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+#Fitness,
+#Fashion,
+#Grooming
+{
+  display: none;
 }
 
 #Fitness > img,
@@ -480,4 +490,15 @@ ul li a:hover span:nth-child(4)
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+#main-content h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+.a2a_kit{
+  width: 183px;
+  margin: 0 auto;
+}
+.a2a_kit a{
+  padding: 2px;
 }

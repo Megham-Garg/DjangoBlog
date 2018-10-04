@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded",function () { // Same as ...
-
 // Wrap every letter in a span
 $('.ml11 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -56,5 +54,13 @@ $(document).ready(function() {
  /*Scroll to top when arrow up clicked END*/
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // main content
-
-})(window);
+// button behaviour
+document.getElementById("3").addEventListener("click", function(){
+    document.getElementById("Fitness").style.display = "block";
+});
+document.getElementById("4").addEventListener("click", function(){
+    document.getElementById("Fashion").style.display = "block";
+});
+document.getElementById("5").addEventListener("click", function(){
+    document.getElementById("Grooming").style.display = "block";
+});

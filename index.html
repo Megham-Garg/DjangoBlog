@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +11,18 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="js/script.js"></script>
+
 </head>
 <body>
 	<header>
 		
 		<nav id="header-nav" class="navbar navbar-default">
 			
-			<a class="visible-md visible-lg" onclick="document.getElementById('id01').style.display='block'">subscribe</a>
-			<a class="visible-md visible-lg" href="#Contribute">Contribute</a>
-			<a class="visible-md visible-lg" href="#Fitness">fitness</a>
-			<a class="visible-md visible-lg" href="#Fashion">Fashion</a>
-			<a class="visible-md visible-lg" href="#Grooming">Grooming</a>
+			<a id="1" class="visible-md visible-lg" onclick="document.getElementById('id01').style.display='block'">subscribe</a>
+			<a id="2" class="visible-md visible-lg" href="#Contribute">Contribute</a>
+			<a id="3" class="visible-md visible-lg" href="#Fitness">Fitness</a>
+			<a id="4" class="visible-md visible-lg" href="#Fashion">Fashion</a>
+			<a id="5" class="visible-md visible-lg" href="#Grooming">Grooming</a>
 			<div class="container">
 				
 				<div class="navbar-header">
@@ -57,19 +58,18 @@
 
 				  <ul class="dropdown-menu" id="hid">
 
-				    <li><a href="#Fitness">Fitness</a></li>
+				    <li><a id="3" href="#Fitness">Fitness</a></li>
 
-				    <li><a href="#Fashion">Fashion</a></li>
+				    <li><a id="4" href="#Fashion">Fashion</a></li>
 
-				    <li><a href="#Grooming">Grooming</a></li>
-
-				    <li role="separator" class="divider visible-sm visible-xs"></li>
-				    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">subscribe</a></li>
+				    <li><a id="5" href="#Grooming">Grooming</a></li>
 
 				    <li role="separator" class="divider visible-sm visible-xs"></li>
-				    <li><a href="#contribute">contribute</a></li>
+				    <li><a id="1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">subscribe</a></li>
+
+				    <li role="separator" class="divider visible-sm visible-xs"></li>
+				    <li><a id="2" href="#Contribute">contribute</a></li>
 				  </ul>
-
 				</div>
 
 				<div id="id01" class="modal">
@@ -107,6 +107,10 @@
 				
 				<div  id="Random">
 					<img src="css/images/random.png">
+					<h3>Recent</h3>
+					<p>The Google Pay PaymentRequest API doesn’t require use of a particular payment system. It’s an open and cross-browser standard that replaces traditional checkout flows by allowing retailers to request and accept any payment in a single API call. Here, the browser acts as the go-between for retailers, users, and payment methods. It standardizes the payment communication flow as much as possible. This API allows you to work on any browser, device, or platform—mobile or otherwise.
+
+Before it approves or denies a payment request, the API allows the web page to check with the user agent at the same time the user provides input. Because the browser acts as a go-between, all of the information necessary for a fast checkout can be stored in the browser. Users can confirm and pay with a single click. Google Pay also supports UPI in-app payments.</p>
 					<!-- AddToAny BEGIN -->
 					<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-title="Self Improvement">
 					<a class="a2a_button_facebook"></a>
@@ -202,8 +206,9 @@
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-	 <!-- jQuery (Bootstrap JS plugins depend on it) -->
-	 <script src="js/jquery-2.1.4.min.js"></script>
-	 <script src="js/bootstrap.min.js"></script>
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -495,10 +495,37 @@ ul li a:hover span:nth-child(4)
   font-size: 30px;
   font-weight: bold;
 }
+#main-content h4{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
 .a2a_kit{
   width: 183px;
   margin: 0 auto;
 }
 .a2a_kit a{
   padding: 2px;
+}
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 20px;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+#main-content p{
+  text-align: left;
 }

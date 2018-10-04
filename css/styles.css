@@ -529,3 +529,13 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 #main-content p{
   text-align: left;
 }
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}

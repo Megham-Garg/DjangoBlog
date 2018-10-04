@@ -64,9 +64,3 @@ document.getElementById("4").addEventListener("click", function(){
 document.getElementById("5").addEventListener("click", function(){
     document.getElementById("Grooming").style.display = "block";
 });
-
-function myFunction(x) {
-    likes=document.getElementById('likes').textContent;
-    var number_of_likes=Number(likes)+1;
-    document.getElementById('likes').innerHTML=number_of_likes;
-}
